@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_ractangal_stroked"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_control"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_standard">
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/FontSemiBold"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/font_size_medium"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            android:id="@+id/tvTypeAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUserName"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="@dimen/font_size_micro" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_standard"
+        android:layout_marginTop="@dimen/spacing_standard"
+        android:layout_marginEnd="@dimen/spacing_standard"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/font_size_small" />
+
+    <TextView
+        android:id="@+id/tvMobileNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_standard"
+        android:layout_marginTop="@dimen/spacing_standard"
+        android:layout_marginEnd="@dimen/spacing_standard"
+        android:textAppearance="@style/FontMedium"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/font_size_small" />
+</LinearLayout>
+

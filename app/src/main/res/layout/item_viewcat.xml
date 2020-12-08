@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridProduct"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/r"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_control_half"
+        android:layout_marginEnd="@dimen/spacing_control_half"
+        android:layout_marginBottom="@dimen/spacing_standard"
+        android:background="@drawable/bg_shadow"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:paddingStart="@dimen/spacing_standard_new"
+            android:paddingTop="@dimen/spacing_standard_new"
+            android:paddingEnd="@dimen/spacing_standard_new">
+
+            <ImageView
+                android:id="@+id/ivProduct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/text_todo"
+                android:scaleType="fitCenter" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingStart="@dimen/spacing_standard"
+            android:paddingEnd="@dimen/spacing_standard"
+            android:paddingBottom="@dimen/spacing_standard_new">
+
+            <TextView
+                android:id="@+id/tvProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:minLines="2"
+                android:gravity="center_horizontal"
+                android:textAppearance="@style/FontMedium"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/font_size_medium" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSaleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_standard_new"
+        android:background="@drawable/bg_ractangal"
+        android:backgroundTint="@color/red"
+        android:paddingStart="@dimen/spacing_standard"
+        android:paddingEnd="@dimen/spacing_standard"
+        android:text="@string/lbl_sales"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_micro"
+        android:visibility="gone" />
+
+</RelativeLayout>

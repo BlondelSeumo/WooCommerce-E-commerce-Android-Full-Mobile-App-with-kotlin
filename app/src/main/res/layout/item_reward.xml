@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:id="@+id/rlMainReward"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_150sdp"
+    android:layout_marginEnd="@dimen/spacing_standard_new"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:id="@+id/scratch_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_reward_back"
+            android:contentDescription="@string/text_todo" />
+
+
+    </RelativeLayout>
